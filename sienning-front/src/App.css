@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Oswald:wght@200&family=Train+One&display=swap');
+#root {
+    height: 100%;
+    font-family: 'Roboto', sans-serif !important;
+    color: #D8CECE !important;
+    font-size: 15px;
+    background-color: #352d2d;
+}
+
+.page {
+    height: 100%;
+}
+
+.header-general {
+    font-size: 80px !important;
+    text-transform: uppercase !important;
+}
+
+.header-name {
+    color: #D8CECE !important;
+    font-family: 'Oswald', sans-serif!important;
+    /* font-family: 'Barlow', sans-serif !important; */
+}
+
+.header-job {
+    color: #BE2D2D !important;
+    font-family: 'Train One', cursive !important;
+    text-shadow: 0 0 13px #B94242;
+}
+
+
+/* ----- MENU ----- */
+.hamburger-svg {
+    opacity: 0.7;
+    transition: opacity 1s;
+}
+.hamburger-svg:hover {
+    opacity: 1;
+}
+
+.overlay {
+    transition: display 1s;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(41, 35, 35);
+    background-color: rgba(41, 35, 35, 0.9);
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 100px;
+    font-family: 'Train One', cursive !important;
+}
+.overlay-content a {
+    margin-bottom: 50px;
+}
+  
+.overlay a {
+    opacity: 0.8;
+    padding: 8px;
+    text-decoration: none;
+    color: #BE2D2D;
+    display: block;
+    transition: 1s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    opacity: 1;
+    color: #BE2D2D;
+    text-shadow: 0 0 13px #B94242;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 20px;
+        right: 20px;
+    }
+}
