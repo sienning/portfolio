@@ -6,7 +6,11 @@ class Contact extends Component {
     render() {
         return (
             <Container style={{ paddingTop: "50px" }} >
-                <Header className="header-general header-job" >Contact</Header>
+                <Header className="header-general header-job" >CREATIONS</Header>
+                <br />
+                <br />
+                <br />
+                <br />
             </Container>
         );
     }
